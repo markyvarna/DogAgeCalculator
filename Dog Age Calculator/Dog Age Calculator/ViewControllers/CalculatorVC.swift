@@ -15,7 +15,8 @@ class CalculatorVC: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         headerView = CalculatorView()
         headerView.backgroundColor = .white
         self.view.addSubview(headerView)

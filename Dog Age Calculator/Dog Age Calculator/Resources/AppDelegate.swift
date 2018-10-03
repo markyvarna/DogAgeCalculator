@@ -16,10 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-       window = UIWindow(frame: UIScreen.main.bounds)
-       let calculatorViewController = CalculatorVC()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let calculatorViewController = CalculatorVC()
+        let launchVC = LaunchVC()
         
-        window?.rootViewController = calculatorViewController
+        window?.rootViewController = launchVC
         window?.makeKeyAndVisible()
         
         return true

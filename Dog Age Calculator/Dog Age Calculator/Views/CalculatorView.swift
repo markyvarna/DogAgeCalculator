@@ -316,25 +316,25 @@ class CalculatorView: UIView {
     @objc func smallDogBP() {
         dogAgeTF.endEditing(true)
         self.smallDogButton.backgroundColor = MVColors.grootGoldLight()
-        isSmallDog = true
-        isLargeDog = false
-        isMediumDog = false
+        isSmallDog = !isSmallDog
+        
+        
     }
     
     @objc func mediumDogBP() {
         dogAgeTF.endEditing(true)
         self.mediumDogButton.backgroundColor = MVColors.grootGoldLight()
-        isMediumDog = true
-        isLargeDog = false
-        isSmallDog = false
+        isMediumDog = !isMediumDog
+//        isLargeDog = false
+//        isSmallDog = false
     }
     
     @objc func largeDogBP() {
         dogAgeTF.endEditing(true)
         self.largeDogButton.backgroundColor = MVColors.grootGoldLight()
-        isLargeDog = true
-        isMediumDog = false
-        isSmallDog = false
+        isLargeDog = !isLargeDog
+//        isMediumDog = false
+//        isSmallDog = false
     }
     
     @objc func calculateBP() {

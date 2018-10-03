@@ -19,17 +19,23 @@ class CalculateController {
     var r = " "
     
     func generateResults(age: Int, isSmall: Bool, isMedium: Bool, isLarge: Bool){
-        if isSmallDog {
+        if isSmall {
             r = calculateSmallDogAge(age: age)
             Calculate(ageInDogYears: r)
+            print("1️⃣🎉🎉")
             
-        } else if isMediumDog {
+        } else if isMedium {
             r = calculateMediumDogAge(age: age)
             Calculate(ageInDogYears: r)
-        } else {
+            print("2️⃣🎉🎉")
+        } else if isLarge{
             r = calculateLargeDogAge(age: age)
             Calculate(ageInDogYears: r)
+            print("3️⃣🎉🎉")
+        } else {
+            print("🤬ERROR")
         }
+        
     }
     
     func calculateSmallDogAge(age: Int) -> String {
